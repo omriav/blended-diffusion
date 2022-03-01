@@ -26,6 +26,11 @@ def get_arguments() -> argparse.Namespace:
         action="store_true",
         dest="local_clip_guided_diffusion",
     )
+    parser.add_argument(
+        "--ddim",
+        help="Indicator for using DDIM instead of DDPM",
+        action="store_true",
+    )
 
     # For more details read guided-diffusion/guided_diffusion/respace.py
     parser.add_argument(

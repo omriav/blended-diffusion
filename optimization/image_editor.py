@@ -224,7 +224,12 @@ class ImageEditor:
         for iteration_number in range(self.args.iterations_num):
             print(f"Start iterations {iteration_number}")
 
-            samples = self.diffusion.p_sample_loop_progressive(
+            sample_func = (
+                self.diffusion.ddim_sample_loop_progressive
+                if self.args.ddim
+                else self.diffusion.p_sample_loop_progressive
+            )
+            samples = sample_func(
                 self.model,
                 (
                     self.args.batch_size,

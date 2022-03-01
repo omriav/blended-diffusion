@@ -656,6 +656,7 @@ class GaussianDiffusion:
         eta=0.0,
         skip_timesteps=0,
         init_image=None,
+        postprocess_fn=None,
         randomize_class=False,
     ):
         """
@@ -671,7 +672,17 @@ class GaussianDiffusion:
             img = noise
         else:
             img = th.randn(*shape, device=device)
-        indices = list(range(self.num_timesteps))[::-1]
+
+        if skip_timesteps and init_image is None:
+            init_image = th.zeros_like(img)
+
+        indices = list(range(self.num_timesteps - skip_timesteps))[::-1]
+
+        if init_image is not None:
+            my_t = th.ones([shape[0]], device=device, dtype=th.long) * indices[0]
+            batch_size = shape[0]
+            init_image_batch = th.tile(init_image, dims=(batch_size, 1, 1, 1))
+            img = self.q_sample(init_image_batch, my_t, img)
 
         if progress:
             # Lazy import so that we don't depend on tqdm.
@@ -699,6 +710,10 @@ class GaussianDiffusion:
                     model_kwargs=model_kwargs,
                     eta=eta,
                 )
+
+                if postprocess_fn is not None:
+                    out = postprocess_fn(out, t)
+
                 yield out
                 img = out["sample"]
 
