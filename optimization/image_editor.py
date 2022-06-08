@@ -259,7 +259,8 @@ class ImageEditor:
                             os.path.join(self.args.output_path, self.args.output_file)
                         )
                         visualization_path = visualization_path.with_stem(
-                            f"{visualization_path.stem}_i_{iteration_number}_b_{b}"
+                            #f"{visualization_path.stem}_i_{iteration_number}_b_{b}"
+                            f"{visualization_path.stem}_i_{iteration_number}_b_{b}_j_{j}"
                         )
 
                         if (
