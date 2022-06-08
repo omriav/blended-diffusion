@@ -2,7 +2,9 @@ import os
 import cv2
 import json
 import numpy as np
-
+'''
+Code from https://towardsdatascience.com/generating-image-segmentation-masks-the-easy-way-dd4d3656dbd1
+'''
 source_folder = os.path.join(os.getcwd(), "images")
 json_path = "maskGen.json"  # Relative to root directory
 count = 0  # Count of total images saved

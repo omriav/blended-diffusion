@@ -1,23 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="11e736f3-f2b5-4d77-9699-bf41306b756f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/checkpoints/256x256_diffusion_uncond.pt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/img/images/img.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/img/masks/mask_body.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/img/masks/mask_entire.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/input_example/mask_body.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/input_example/mask_entire.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/input_example/mask_face.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/maskGen.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/maskGen.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/optimization/image_editor.py" beforeDir="false" afterPath="$PROJECT_DIR$/optimization/image_editor.py" afterDir="false" />
-    </list>
+    <list default="true" id="11e736f3-f2b5-4d77-9699-bf41306b756f" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -137,7 +121,7 @@
       <workItem from="1654580426254" duration="14777000" />
       <workItem from="1654656086885" duration="3318000" />
       <workItem from="1654669488001" duration="21000" />
-      <workItem from="1654669509981" duration="312000" />
+      <workItem from="1654669509981" duration="619000" />
     </task>
     <servers />
   </component>
@@ -165,7 +149,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/main.py</url>
-          <line>8</line>
+          <line>2</line>
           <option name="timeStamp" value="6" />
         </line-breakpoint>
       </breakpoints>
