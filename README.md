@@ -1,6 +1,12 @@
 # Blended Diffusion for Text-driven Editing of Natural Images
 
-> **Blended Diffusion for Text-driven Editing of Natural Images**
+<a href="https://arxiv.org/abs/2111.14818"><img src="https://img.shields.io/badge/arXiv-2111.14818-b31b1b.svg"></a>
+<a href="https://opensource.org/licenses/MIT"><img src="https://img.shields.io/badge/License-MIT-yellow.svg"></a>
+<a href="https://pytorch.org/"><img src="https://img.shields.io/badge/PyTorch->=1.9.0-Red?logo=pytorch"></a>
+
+<img src="docs/different_prompts2.jpg" width="800px">
+
+> <a href="https://omriavrahami.com/blended-diffusion-page/">**Blended Diffusion for Text-driven Editing of Natural Images**</a>
 >
 > Omri Avrahami, Dani Lischinski, Ohad Fried
 >
@@ -10,11 +16,8 @@ To seamlessly fuse the edited region with the unchanged parts of the image, we s
 In addition, we show that adding augmentations to the diffusion process mitigates adversarial results.
 We compare against several baselines and related methods, both qualitatively and quantitatively, and show that our method outperforms these solutions in terms of overall realism, ability to preserve the background and matching the text. Finally, we show several text-driven editing applications, including adding a new object to an image, removing/replacing/altering existing objects, background replacement, and image extrapolation.
 
-<a href="https://arxiv.org/abs/2111.14818"><img src="https://img.shields.io/badge/arXiv-2111.14818-b31b1b.svg"></a>
-<a href="https://opensource.org/licenses/MIT"><img src="https://img.shields.io/badge/License-MIT-yellow.svg"></a>
-<a href="https://pytorch.org/"><img src="https://img.shields.io/badge/PyTorch->=1.9.0-Red?logo=pytorch"></a>
-
-<img src="docs/different_prompts2.jpg" width="800px">
+# News
+You may be interested in the follow-up project <a href="https://omriavrahami.com/blended-latent-diffusion-page/">Blended Latent Diffusion</a>, which produces better results and with a significant speed-up. Code is available <a href="https://github.com/omriav/blended-latent-diffusion">here</a>.
 
 # Getting Started
 ## Installation
