@@ -1,5 +1,6 @@
 # Blended Diffusion for Text-driven Editing of Natural Images
 
+<a href="https://omriavrahami.com/blended-diffusion-page/"><img src="https://img.shields.io/static/v1?label=Project&message=Website&color=blue"></a> 
 <a href="https://arxiv.org/abs/2111.14818"><img src="https://img.shields.io/badge/arXiv-2111.14818-b31b1b.svg"></a>
 <a href="https://opensource.org/licenses/MIT"><img src="https://img.shields.io/badge/License-MIT-yellow.svg"></a>
 <a href="https://pytorch.org/"><img src="https://img.shields.io/badge/PyTorch->=1.9.0-Red?logo=pytorch"></a>
@@ -73,11 +74,12 @@ This code borrows from [CLIP](https://github.com/openai/CLIP), [Guided-diffusion
 # Citation
 If you use this code for your research, please cite the following:
 ```
-@inproceedings{avrahami2022blended,
-  title={Blended diffusion for text-driven editing of natural images},
-  author={Avrahami, Omri and Lischinski, Dani and Fried, Ohad},
-  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
-  pages={18208--18218},
-  year={2022}
+@InProceedings{Avrahami_2022_CVPR,
+    author    = {Avrahami, Omri and Lischinski, Dani and Fried, Ohad},
+    title     = {Blended Diffusion for Text-Driven Editing of Natural Images},
+    booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+    month     = {June},
+    year      = {2022},
+    pages     = {18208-18218}
 }
 ```
