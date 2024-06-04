@@ -30,7 +30,7 @@ $ conda activate blended-diffusion
 $ pip3 install ftfy regex matplotlib lpips kornia opencv-python torch==1.9.0+cu111 torchvision==0.10.0+cu111 -f https://download.pytorch.org/whl/torch_stable.html
 ```
 
-2. Create a `checkpoints` directory and download the pretrained diffusion model from [here](https://drive.google.com/file/d/145NpznbcwMeoX-v8U-bUpu8eXILh3n7Z/view?usp=sharing) to this folder.
+2. Create a `checkpoints` directory and download the pretrained diffusion model from [here](https://huggingface.co/omriav/blended-diffusion/resolve/main/checkpoints/256x256_diffusion_uncond.pt?download=true) to this folder.
 
 ## Image generation
 An example of text-driven multiple synthesis results:
